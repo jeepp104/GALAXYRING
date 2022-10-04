@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657530999-L2PnPPeR" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "สวัสดีค่ะ",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "💎GALAXY RING💎",
+            "margin": "none",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff",
+            "style": "italic",
+            "align": "center"
+          },
+          {
+            "type": "text",
+            "text": "PG JOKER JILLI SAgame NETENT",
+            "margin": "none",
+            "size": "xs",
+            "align": "center",
+            "color": "#ff8d91"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": []
+          }
+        ],
+        "backgroundColor": "#330066",
+        "cornerRadius": "xxl"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://www.img.in.th/images/15b2f75b35001da2cb5a51ac3899aca6.jpg",
+            "size": "5xl"
+          }
+        ],
+        "margin": "md",
+        "borderWidth": "none",
+        "paddingAll": "none",
+        "paddingEnd": "none"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "separator",
+            "color": "#000000",
+            "margin": "sm"
+          }
+        ],
+        "backgroundColor": "#cc3366",
+        "cornerRadius": "lg",
+        "margin": "lg",
+        "spacing": "none"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "กดแชร์ให้เพื่อน",
+              "uri": "https://www.autoflix168.net/"
+            },
+            "color": "#000000"
+          }
+        ],
+        "backgroundColor": "#cc66cc",
+        "cornerRadius": "xl",
+        "margin": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "เสร็จแล้วกด",
+              "text": "ต่อไป"
+            },
+            "color": "#ffffff"
+          }
+        ],
+        "margin": "sm",
+        "backgroundColor": "#cc66cc",
+        "cornerRadius": "xl"
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#5564f4",
+      "endColor": "#9933cc"
+    }
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
